@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORFX - Global Market Research & Expansion Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h1>FORFX</h1>
+                <span class="nav-subtitle">Global Market Research & Expansion Dashboard</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#overview" class="nav-link active">Overview</a>
+                <a href="#regional" class="nav-link">Regional Analysis</a>
+                <a href="#countries" class="nav-link">Country Opportunities</a>
+                <a href="#competitive" class="nav-link">Competitive Landscape</a>
+                <a href="#roadmap" class="nav-link">Implementation Roadmap</a>
+                <a href="#recommendations" class="nav-link">Strategic Recommendations</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Overview Section -->
+        <section id="overview" class="section active">
+            <div class="section-header">
+                <h2>Overview</h2>
+                <p>Comprehensive analysis for FORFX regional expansion strategy</p>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">$20B</div>
+                    <div class="metric-label">Global Market Size</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">$131.5B</div>
+                    <div class="metric-label">Total TAM</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">2,000+</div>
+                    <div class="metric-label">Global Firms</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">607%</div>
+                    <div class="metric-label">Interest Growth</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Regional Analysis Section -->
+        <section id="regional" class="section">
+            <div class="section-header">
+                <h2>Regional Analysis</h2>
+                <p>Market size, growth rates, and priority scores across global regions</p>
+            </div>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Regional Market Size (Billion USD)</h3>
+                    <canvas id="regionalMarketChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Growth Rate vs Priority Score</h3>
+                    <canvas id="growthPriorityChart"></canvas>
+                </div>
+            </div>
+            <div class="regional-table-container">
+                <h3>Regional Comparison</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Region</th>
+                            <th>Market Size ($B)</th>
+                            <th>Growth (CAGR)</th>
+                            <th>Priority Score</th>
+                            <th>Internet Penetration</th>
+                            <th>CAC ($)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="regionalTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Country Opportunities Section -->
+        <section id="countries" class="section">
+            <div class="section-header">
+                <h2>Country Opportunities</h2>
+                <p>Top market opportunities ranked by opportunity score and tier</p>
+            </div>
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="tierFilter">Filter by Tier:</label>
+                    <select id="tierFilter" class="filter-select">
+                        <option value="all">All Tiers</option>
+                        <option value="Tier 1">Tier 1</option>
+                        <option value="Tier 2">Tier 2</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="regionFilter">Filter by Region:</label>
+                    <select id="regionFilter" class="filter-select">
+                        <option value="all">All Regions</option>
+                        <option value="Asia-Pacific">Asia-Pacific</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Latin America">Latin America</option>
+                        <option value="MENA">MENA</option>
+                    </select>
+                </div>
+            </div>
+            <div class="countries-content">
+                <div class="countries-table-container">
+                    <h3>Top Country Ranking</h3>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Country</th>
+                                <th>Opportunity Score</th>
+                                <th>Market Size ($B)</th>
+                                <th>Entry Difficulty</th>
+                                <th>Time to Market</th>
+                                <th>Region</th>
+                            </tr>
+                        </thead>
+                        <tbody id="countriesTableBody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="country-cards" id="countryCards">
+                </div>
+            </div>
+        </section>
+
+        <!-- Competitive Landscape Section -->
+        <section id="competitive" class="section">
+            <div class="section-header">
+                <h2>Competitive Landscape</h2>
+                <p>Market presence, fee structures, and competitive positioning</p>
+            </div>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Market Presence Score</h3>
+                    <canvas id="marketPresenceChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Challenge Fee vs Market Presence</h3>
+                    <canvas id="feePresenceChart"></canvas>
+                </div>
+            </div>
+            <div class="competitive-table-container">
+                <h3>Competitor Comparison</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Challenge Fee ($)</th>
+                            <th>Profit Split (%)</th>
+                            <th>Max Funding</th>
+                            <th>Key Differentiator</th>
+                        </tr>
+                    </thead>
+                    <tbody id="competitorTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Implementation Roadmap Section -->
+        <section id="roadmap" class="section">
+            <div class="section-header">
+                <h2>Implementation Roadmap</h2>
+                <p>Strategic phased approach for market entry and expansion</p>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 1</div>
+                        <div class="phase-period">Q1-Q2 2025</div>
+                    </div>
+                    <h4>Quick Market Validation</h4>
+                    <div class="phase-countries">Countries: UAE, Mexico</div>
+                    <div class="phase-budget">Budget: 25%</div>
+                    <ul class="phase-benefits">
+                        <li>Fast implementation</li>
+                        <li>Low regulatory risk</li>
+                        <li>Market testing</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 2</div>
+                        <div class="phase-period">Q3-Q4 2025</div>
+                    </div>
+                    <h4>High-Value Market Entry</h4>
+                    <div class="phase-countries">Countries: India, Kenya</div>
+                    <div class="phase-budget">Budget: 40%</div>
+                    <ul class="phase-benefits">
+                        <li>Large market size</li>
+                        <li>High growth potential</li>
+                        <li>Strategic positioning</li>
+                    </ul>
+                </div>
+                <div class="phase-card">
+                    <div class="phase-header">
+                        <div class="phase-title">Phase 3</div>
+                        <div class="phase-period">2026</div>
+                    </div>
+                    <h4>Regional Consolidation</h4>
+                    <div class="phase-countries">Countries: Indonesia, Malaysia, Vietnam</div>
+                    <div class="phase-budget">Budget: 35%</div>
+                    <ul class="phase-benefits">
+                        <li>ASEAN presence</li>
+                        <li>Market diversification</li>
+                        <li>Scale advantages</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="budget-chart-container">
+                <h3>Budget Allocation by Region</h3>
+                <div class="chart-wrapper">
+                    <canvas id="budgetChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Strategic Recommendations Section -->
+        <section id="recommendations" class="section">
+            <div class="section-header">
+                <h2>Strategic Recommendations</h2>
+                <p>Key recommendations for successful market entry and expansion</p>
+            </div>
+            <div class="recommendations-grid">
+                <div class="recommendation-card">
+                    <h3>Pricing Strategy</h3>
+                    <div class="pricing-item">
+                        <span class="pricing-label">Challenge Fee Range:</span>
+                        <span class="pricing-value">$50 - $80</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="pricing-label">Profit Split Range:</span>
+                        <span class="pricing-value">80% - 90%</span>
+                    </div>
+                    <div class="pricing-item">
+                        <span class="pricing-label">Max Funding Range:</span>
+                        <span class="pricing-value">$500,000 - $1,000,000</span>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <h3>Budget Allocation</h3>
+                    <div class="budget-item">
+                        <span class="budget-label">Asia Pacific:</span>
+                        <span class="budget-value">40%</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Latin America:</span>
+                        <span class="budget-value">25%</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Europe:</span>
+                        <span class="budget-value">20%</span>
+                    </div>
+                    <div class="budget-item">
+                        <span class="budget-label">Africa:</span>
+                        <span class="budget-value">15%</span>
+                    </div>
+                </div>
+                <div class="recommendation-card">
+                    <h3>Key Success Factors</h3>
+                    <ul class="success-factors">
+                        <li>Mobile-first platform development</li>
+                        <li>Local regulatory compliance</li>
+                        <li>Competitive pricing strategy</li>
+                        <li>Strategic partnerships</li>
+                        <li>Localized customer service</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
