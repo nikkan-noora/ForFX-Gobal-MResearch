@@ -14,13 +14,19 @@ const dashboardData = {
     {"region": "North America", "market_size": 51.3, "growth": 7.2, "priority_score": 26.8, "internet_penetration": 91.2, "cac": 89}
   ],
   "country_data": [
-    {"rank": 1, "country": "India", "opportunity_score": 9.1, "market_size": 8.42, "entry_difficulty": 6.8, "time_to_market": "8 months", "region": "Asia-Pacific", "tier": "Tier 1"},
-    {"rank": 2, "country": "Kenya", "opportunity_score": 8.8, "market_size": 0.85, "entry_difficulty": 4.1, "time_to_market": "5 months", "region": "Africa", "tier": "Tier 1"},
-    {"rank": 3, "country": "Mexico", "opportunity_score": 8.7, "market_size": 2.80, "entry_difficulty": 5.2, "time_to_market": "4 months", "region": "Latin America", "tier": "Tier 1"},
-    {"rank": 4, "country": "UAE", "opportunity_score": 8.6, "market_size": 0.68, "entry_difficulty": 3.8, "time_to_market": "3 months", "region": "MENA", "tier": "Tier 1"},
-    {"rank": 5, "country": "Indonesia", "opportunity_score": 8.2, "market_size": 2.15, "entry_difficulty": 5.9, "time_to_market": "6 months", "region": "Asia-Pacific", "tier": "Tier 2"},
-    {"rank": 6, "country": "Vietnam", "opportunity_score": 7.9, "market_size": 1.00, "entry_difficulty": 6.1, "time_to_market": "7 months", "region": "Asia-Pacific", "tier": "Tier 2"},
-    {"rank": 7, "country": "Malaysia", "opportunity_score": 7.6, "market_size": 1.12, "entry_difficulty": 5.4, "time_to_market": "5 months", "region": "Asia-Pacific", "tier": "Tier 2"}
+  {"rank": 1, "country": "India", "opportunity_score": 9.1, "market_size": 8.42, "entry_difficulty": 6.8, "time_to_market": "8 months", "region": "Asia-Pacific", "tier": "Tier 1"},
+  {"rank": 2, "country": "Kenya", "opportunity_score": 8.8, "market_size": 0.85, "entry_difficulty": 4.1, "time_to_market": "5 months", "region": "Africa", "tier": "Tier 1"},
+  {"rank": 3, "country": "Mexico", "opportunity_score": 8.7, "market_size": 2.80, "entry_difficulty": 5.2, "time_to_market": "4 months", "region": "Latin America", "tier": "Tier 1"},
+  {"rank": 4, "country": "UAE", "opportunity_score": 8.6, "market_size": 0.68, "entry_difficulty": 3.8, "time_to_market": "3 months", "region": "MENA", "tier": "Tier 1"},
+  {"rank": 5, "country": "Indonesia", "opportunity_score": 8.2, "market_size": 2.15, "entry_difficulty": 5.9, "time_to_market": "6 months", "region": "Asia-Pacific", "tier": "Tier 2"},
+  {"rank": 6, "country": "Vietnam", "opportunity_score": 7.9, "market_size": 1.00, "entry_difficulty": 6.1, "time_to_market": "7 months", "region": "Asia-Pacific", "tier": "Tier 2"},
+  {"rank": 7, "country": "Malaysia", "opportunity_score": 7.6, "market_size": 1.12, "entry_difficulty": 5.4, "time_to_market": "5 months", "region": "Asia-Pacific", "tier": "Tier 2"},
+  {"rank": 8, "country": "Brazil", "opportunity_score": 8.9, "market_size": 1.8, "entry_difficulty": 5.8, "time_to_market": "7-9 months", "region": "Latin America", "tier": "Tier 1"},
+  {"rank": 9, "country": "Colombia", "opportunity_score": 8.5, "market_size": 0.65, "entry_difficulty": 4.9, "time_to_market": "5-7 months", "region": "Latin America", "tier": "Tier 2"},
+  {"rank": 10, "country": "Singapore", "opportunity_score": 8.1, "market_size": 1.4, "entry_difficulty": 6.9, "time_to_market": "8-12 months", "region": "Asia-Pacific", "tier": "Tier 1"},
+  {"rank": 11, "country": "Switzerland", "opportunity_score": 7.4, "market_size": 0.95, "entry_difficulty": 7.2, "time_to_market": "12-15 months", "region": "Europe", "tier": "Tier 1"},
+  {"rank": 12, "country": "Germany", "opportunity_score": 7.1, "market_size": 1.9, "entry_difficulty": 6.8, "time_to_market": "9-12 months", "region": "Europe", "tier": "Tier 2"},
+  {"rank": 13, "country": "United Kingdom", "opportunity_score": 6.8, "market_size": 3.2, "entry_difficulty": 8.1, "time_to_market": "12-18 months", "region": "Europe", "tier": "Tier 2"}
   ],
   "competitor_data": [
     {"company": "DNA Funded", "challenge_fee": 49, "profit_split": 80, "max_funding": "$400K", "differentiator": "800 markets", "market_presence": 9.5},
