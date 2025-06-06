@@ -1,7 +1,7 @@
 // FORFX Dashboard Data
 const dashboardData = {
   "global_metrics": {
-    "market_size": "$20B",
+    "market_size": "$200B",
     "total_tam": "$131.5B", 
     "global_firms": "2,000+",
     "interest_growth": "607%"
