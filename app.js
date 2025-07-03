@@ -47,7 +47,10 @@ const dashboardData = {
   {"rank": 31, "country": "South Korea", "opportunity_score": 7.4, "market_size": 12.0, "entry_difficulty": 6.0, "time_to_market": "6 months", "region": "Asia-Pacific", "tier": "Tier 2", "avg_cac": 170, "competition_level": 7.8},
   {"rank": 32, "country": "Taiwan", "opportunity_score": 7.2, "market_size": 8.2, "entry_difficulty": 5.8, "time_to_market": "6 months", "region": "Asia-Pacific", "tier": "Tier 2", "avg_cac": 160, "competition_level": 7.0},
   {"rank": 33, "country": "Armenia", "opportunity_score": 6.9, "market_size": 0.45, "entry_difficulty": 5.5, "time_to_market": "6 months", "region": "Europe", "tier": "Tier 3", "avg_cac": 60, "competition_level": 4.5},
-  {"rank": 34, "country": "Ecuador", "opportunity_score": 6.7, "market_size": 0.85, "entry_difficulty": 5.7, "time_to_market": "6 months", "region": "Latin America", "tier": "Tier 3", "avg_cac": 75, "competition_level": 5.0}
+  {"rank": 34, "country": "Ecuador", "opportunity_score": 6.7, "market_size": 0.85, "entry_difficulty": 5.7, "time_to_market": "6 months", "region": "Latin America", "tier": "Tier 3", "avg_cac": 75, "competition_level": 5.0},
+  {"rank": 35, "country": "Denmark", "opportunity_score": 7.2, "market_size": 12.5, "entry_difficulty": 4, "time_to_market": "4 months", "region": "Europe", "tier": "Tier 1", "avg_cac": 140, "competition_level": 7.0},
+  {"rank": 36, "country": "Slovakia", "opportunity_score": 6.8, "market_size": 2.4, "entry_difficulty": 5, "time_to_market": "5 months", "region": "Europe", "tier": "Tier 2", "avg_cac": 120, "competition_level": 5.5},
+  {"rank": 37, "country": "Bulgaria", "opportunity_score": 6.7, "market_size": 1.9, "entry_difficulty": 5.2, "time_to_market": "6 months", "region": "Europe", "tier": "Tier 2", "avg_cac": 105, "competition_level": 5}
   ],
   "competitor_data": [
     {"company": "DNA Funded", "challenge_fee": 49, "profit_split": 80, "max_funding": "$400K", "differentiator": "800 markets", "market_presence": 9.5},
