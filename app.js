@@ -7,11 +7,11 @@ const dashboardData = {
     "interest_growth": "607%"
   },
   "regional_data": [
-    {"region": "Asia-Pacific", "market_size": 57.8, "growth": 21.2, "priority_score": 32.6, "internet_penetration": 75.3, "cac": 42},
-    {"region": "Latin America", "market_size": 32.1, "growth": 18.5, "priority_score": 23.9, "internet_penetration": 72.8, "cac": 35},
-    {"region": "MENA", "market_size": 15.2, "growth": 16.3, "priority_score": 21.4, "internet_penetration": 69.2, "cac": 48},
-    {"region": "Western Europe", "market_size": 45.2, "growth": 8.4, "priority_score": 28.1, "internet_penetration": 88.5, "cac": 78},
-    {"region": "North America", "market_size": 51.3, "growth": 7.2, "priority_score": 26.8, "internet_penetration": 91.2, "cac": 89}
+  {"region": "Asia-Pacific", "market_size": 57.8, "growth": 21.2, "priority_score": 32.6, "internet_penetration": 75.3, "cac": 42, "regulations": 7, "trust_level": 5, "brand_awareness": 7},
+  {"region": "Latin America", "market_size": 32.1, "growth": 18.5, "priority_score": 23.9, "internet_penetration": 72.8, "cac": 35, "regulations": 6, "trust_level": 5, "brand_awareness": 6},
+  {"region": "MENA", "market_size": 15.2, "growth": 16.3, "priority_score": 21.4, "internet_penetration": 69.2, "cac": 48, "regulations": 7, "trust_level": 6, "brand_awareness": 7},
+  {"region": "Western Europe", "market_size": 45.2, "growth": 8.4, "priority_score": 28.1, "internet_penetration": 88.5, "cac": 78, "regulations": 8, "trust_level": 7, "brand_awareness": 8},
+  {"region": "North America", "market_size": 51.3, "growth": 7.2, "priority_score": 26.8, "internet_penetration": 91.2, "cac": 89, "regulations": 9, "trust_level": 7, "brand_awareness": 9}
   ],
   "country_data": [
   {"rank": 1, "country": "India", "opportunity_score": 9.1, "market_size": 8.42, "entry_difficulty": 6.8, "time_to_market": "8 months", "region": "Asia-Pacific", "tier": "Tier 1"},
@@ -124,6 +124,9 @@ function populateRegionalTable() {
       <td>${region.priority_score}/40</td>
       <td>${region.internet_penetration}%</td>
       <td>$${region.cac}</td>
+      <td>${region.regulations}/10</td>
+      <td>${region.trust_level}/10</td>
+      <td>${region.brand_awareness}/10</td>
     `;
     tableBody.appendChild(row);
   });
