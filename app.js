@@ -183,6 +183,8 @@ function populateCountriesTable() {
       <td>${country.entry_difficulty}/10</td>
       <td>${country.time_to_market}</td>
       <td>${country.region}</td>
+      <td>$${country.avg_cac.toLocaleString()}</td>
+      <td>${country.competition_level}/10</td>
     `;
     tableBody.appendChild(row);
   });
@@ -203,29 +205,37 @@ function populateCountryCards() {
     card.className = 'country-card';
     card.dataset.tier = country.tier;
     card.dataset.region = country.region;
-    card.innerHTML = `
-      <div class="country-card-header">
-        <div class="country-name">${country.country}</div>
-        <div class="country-tier">${country.tier}</div>
+  card.innerHTML = `
+    <div class="country-card-header">
+      <div class="country-name">${country.country}</div>
+      <div class="country-tier">${country.tier}</div>
+    </div>
+    <div class="country-metrics">
+      <div class="country-metric">
+        <div class="country-metric-label">Opportunity Score</div>
+        <div class="country-metric-value">${country.opportunity_score}/10</div>
       </div>
-      <div class="country-metrics">
-        <div class="country-metric">
-          <div class="country-metric-label">Opportunity Score</div>
-          <div class="country-metric-value">${country.opportunity_score}/10</div>
-        </div>
-        <div class="country-metric">
-          <div class="country-metric-label">Market Size</div>
-          <div class="country-metric-value">$${country.market_size}B</div>
-        </div>
-        <div class="country-metric">
-          <div class="country-metric-label">Entry Difficulty</div>
-          <div class="country-metric-value">${country.entry_difficulty}/10</div>
-        </div>
-        <div class="country-metric">
-          <div class="country-metric-label">Time to Market</div>
-          <div class="country-metric-value">${country.time_to_market}</div>
-        </div>
+      <div class="country-metric">
+        <div class="country-metric-label">Market Size</div>
+        <div class="country-metric-value">$${country.market_size.toFixed(1)}B</div>
       </div>
+      <div class="country-metric">
+        <div class="country-metric-label">Entry Difficulty</div>
+        <div class="country-metric-value">${country.entry_difficulty}/10</div>
+      </div>
+      <div class="country-metric">
+        <div class="country-metric-label">Time to Market</div>
+        <div class="country-metric-value">${country.time_to_market}</div>
+      </div>
+      <div class="country-metric">
+        <div class="country-metric-label">Avg CAC</div>
+        <div class="country-metric-value">$${country.avg_cac.toLocaleString()}</div>
+      </div>
+      <div class="country-metric">
+        <div class="country-metric-label">Competition Level</div>
+        <div class="country-metric-value">${country.competition_level}/10</div>
+      </div>
+    </div>
     `;
     cardsContainer.appendChild(card);
   });
